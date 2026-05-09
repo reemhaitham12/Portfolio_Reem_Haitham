@@ -61,14 +61,14 @@ export const content = {
             title: "Front-End Web Development Intern",
             org: "Information Technology Institute (ITI)",
             duration: "Aug 2021 – Sep 2021",
-            icon: "./src/assets/logo.jpg",
+            icon: "./logo.jpg",
             link: "#" // ITI Certificate Link
           },
           {
             title: "Front-End Development Training",
             org: "Route",
             duration: "Mar 2024 – Sep 2024",
-            icon: "./src/assets/route.png",
+            icon: "./route.png",
             link: "" // Route Certificate Link
           }
         ]
@@ -114,7 +114,7 @@ export const content = {
         {
           id: 1,
           icon: "🛒",
-          image: "./src/assets/FreshCart.png",
+          image: "./FreshCart.png",
           title: "Fresh Cart E-Commerce",
           source: "Internship Project",
           role: "Front-End Developer",
@@ -156,7 +156,7 @@ export const content = {
         {
           id: 3,
           icon: "🏛️",
-          image: "./src/assets/Kemet.png",
+          image: "./Kemet.png",
           title: "Tourism Kemet Website",
           source: "Real Client Project",
           role: "Front-End Developer",
@@ -186,7 +186,7 @@ export const content = {
           id: 1,
           role: "Full Stack Developer",
           company: "Digilians",
-          logo: "./src/assets/digilians.png",
+          logo: "./digilians.png",
           duration: "2026",
           challenge: "Improve application performance, scalability, and user engagement.",
           actions: [
@@ -205,7 +205,7 @@ export const content = {
           id: 2,
           role: "Coding Instructor",
           company: "Be School",
-          logo: "./src/assets/beSchool.png",
+          logo: "./beSchool.png",
           duration: "2024 – 2025",
           challenge: "Help students understand programming concepts and build practical skills.",
           actions: [
@@ -223,7 +223,7 @@ export const content = {
           id: 3,
           role: "Front-End Developer Trainee",
           company: "Route",
-          logo: "./src/assets/route.png",
+          logo: "./route.png",
           duration: "2024",
           challenge: "Build high-performance applications and improve user experience for real users.",
           actions: [
@@ -451,14 +451,14 @@ export const content = {
             title: "متدرب تطوير واجهات أمامية (Intern)",
             org: "معهد تكنولوجيا المعلومات (ITI)",
             duration: "أغسطس 2021 – سبتمبر 2021",
-            icon: "./src/assets/logo.jpg",
+            icon: "./logo.jpg",
             link: "#"
           },
           {
             title: "تدريب مطور واجهات أمامية",
             org: "Route",
             duration: "مارس 2024 – سبتمبر 2024",
-            icon: "./src/assets/route.png",
+            icon: "./route.png",
             link: ""
           }
         ]
@@ -504,7 +504,7 @@ export const content = {
         {
           id: 1,
           icon: "🛒",
-          image: "./src/assets/FreshCart.png",
+          image: "./FreshCart.png",
           title: "متجر Fresh Cart",
           source: "مشروع شخصي",
           role: "مطور واجهات أمامية",
@@ -546,7 +546,7 @@ export const content = {
         {
           id: 3,
           icon: "🏛️",
-          image: "./src/assets/Kemet.png",
+          image: "./Kemet.png",
           title: "موقع Tourism Kemet",
           source: "مشروع تدريب",
           role: "مطور واجهة مستخدم",
@@ -576,7 +576,7 @@ export const content = {
           id: 1,
           role: "مطور تطبيقات كاملة (Full Stack Developer)",
           company: "Digilians",
-          logo: "./src/assets/digilians.png",
+          logo: "./digilians.png",
           duration: "2026",
           challenge: "تحسين أداء التطبيق، وقابليته للتوسع، وتفاعل المستخدمين.",
           actions: [
@@ -595,7 +595,7 @@ export const content = {
           id: 2,
           role: "مدرب برمجة",
           company: "Be School",
-          logo: "./src/assets/beSchool.png",
+          logo: "./beSchool.png",
           duration: "2024 – 2025",
           challenge: "مساعدة الطلاب على فهم مفاهيم البرمجة وبناء مهارات عملية.",
           actions: [
@@ -613,7 +613,7 @@ export const content = {
           id: 3,
           role: "متدرب تطوير واجهات أمامية",
           company: "Route",
-          logo: "./src/assets/route.png",
+          logo: "./route.png",
           duration: "2024",
           challenge: "بناء تطبيقات عالية الأداء وتحسين تجربة المستخدم للمستخدمين الحقيقيين.",
           actions: [

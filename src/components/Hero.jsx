@@ -19,7 +19,7 @@ const Hero = () => {
           <div style={btnGroupStyle}>
             <a href="#projects" className="btn btn-primary">{text.buttons.viewProjects}</a>
             {/* <a href="#contact" className="btn btn-outline">{text.buttons.contact}</a> */}
-            <a href="./public/assets/cv/reemhaitham124.pdf" download className="btn btn-outline">
+            <a href="./assets/cv/reemhaitham124.pdf" download className="btn btn-outline">
               {text.buttons.downloadCV}
             </a>
           </div>
@@ -31,7 +31,7 @@ const Hero = () => {
             {/* Soft background shape */}
             <div style={bgShapeStyle}></div>
             <img
-              src="src/assets/personImg.jpg"
+              src="./personImg.jpg"
               alt={text.name}
               style={profileImgStyle}
               onError={(e) => {
