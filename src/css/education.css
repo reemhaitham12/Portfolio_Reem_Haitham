@@ -1,0 +1,194 @@
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.education-column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  width: fit-content;
+}
+
+.education-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.edu-card {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  position: relative;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+[data-theme='light'] .edu-card {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.edu-card:hover {
+  transform: translateX(10px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3), 0 0 15px var(--accent-glow);
+}
+
+[dir='rtl'] .edu-card:hover {
+  transform: translateX(-10px);
+}
+
+.edu-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.edu-university,
+.edu-org {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.edu-degree,
+.edu-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.edu-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.edu-duration,
+.edu-grade {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(0, 0, 0, 0.15); /* Slightly lighter gray */
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  width: fit-content; /* Ensure background wraps text only */
+  font-size: 0.85rem;
+}
+
+.edu-cert-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  color: #fff !important;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.edu-cert-link:hover {
+  transform: scale(1.2) rotate(15deg);
+  background: var(--primary-hover);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+/* Horizontal Certification Cards Fix */
+.cert-card-horizontal {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 1.75rem;
+}
+
+.cert-icon-box {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+[data-theme='light'] .cert-icon-box {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.cert-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.horizontal-link {
+  flex-shrink: 0;
+  background: transparent;
+  color: var(--text-muted) !important;
+  box-shadow: none;
+  font-size: 1.2rem;
+}
+
+.horizontal-link:hover {
+  color: var(--primary) !important;
+  transform: scale(1.1);
+}
+
+[data-theme='light'] .edu-duration,
+[data-theme='light'] .edu-grade {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.edu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: var(--primary);
+  transition: height 0.4s ease;
+}
+
+[dir='rtl'] .edu-card::before {
+  left: auto;
+  right: 0;
+}
+
+.edu-card:hover::before {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .edu-card:hover {
+    transform: translateY(-5px);
+  }
+}
